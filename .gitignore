@@ -1,0 +1,11 @@
+rstudio/*
+nvim_lazy.bak/*
+nvim.bak/
+sanity/*
+gh/*
+github-copilot/*
+Microsoft\\VisualStudio Services/*
+NuGet/*
+xbuild/*
+configstore/*
+~/*
