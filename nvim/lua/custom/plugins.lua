@@ -4,7 +4,6 @@ local plugins = {
   {
     "nvim-lua/plenary.nvim",
   },
-
   -- The best plugin of all time
   {
     "ThePrimeagen/harpoon",
@@ -673,6 +672,15 @@ local plugins = {
     "eandrju/cellular-automaton.nvim",
     cmd = "CellularAutomaton",
   },
+  -- PDF Live Preview
+  {
+    'marioortizmanero/adoc-pdf-live.nvim',
+    config = function()
+      require('adoc_pdf_live').setup {
+        enabled = true
+      }
+    end,
+    cmd = { 'AdocPdfLiveStart', 'AdocPdfLiveOpen', 'AdocPdfLiveStop' }
+  },
 }
-
 return plugins
